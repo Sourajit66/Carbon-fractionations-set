@@ -1,4 +1,4 @@
-Toy model for carbon diffusion and graphite formation
+%% Toy model for carbon diffusion and graphite formation
 % Isothermal condition
 % Isotropic condition
 numx = 1001;   %number of grid points in x (1000micron=1mm)
@@ -50,8 +50,8 @@ Cm13(:,1)=C13(:,1);
 Cm12(:,1)=C12(:,1);
 %initialize everything to zero
 
-Algorithm based on non-equilibrium Batch crystal separation, in a non-isothermal-linear non-accelerating crystallisation, 
-using centered finite difference method on 2nd order Fick's equation.
+%% Algorithm based on non-equilibrium Batch crystal separation, in a non-isothermal-linear non-accelerating crystallisation, 
+%% using centered finite difference method on 2nd order Fick's equation.
 
 %C12=1.80005;
 f=linspace(1,0,step(k-3));%batch crystaliisation fraction on step sizes
